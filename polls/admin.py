@@ -6,7 +6,7 @@ from .models import Question,Choice
 
 #customising the admin panel
 
-class ChoiceInline(admin.StackedInline):
+class ChoiceInline(admin.TabularInline):
 	model = Choice
 	extra = 3
 
